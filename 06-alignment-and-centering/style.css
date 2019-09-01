@@ -1,5 +1,4 @@
 /* CSS Normalize */
-
 article,
 aside,
 details,
@@ -134,7 +133,6 @@ input {
 button,
 html input[type=button],
 /* 1 */
-
 input[type=reset],
 input[type=submit] {
   -webkit-appearance: button;
@@ -187,15 +185,14 @@ input::-moz-focus-inner {
 }
 
 /* Box-sizing border-box */
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* Some default styles to make each box visible */
 
+/* Some default styles to make each box visible */
 .box {
   color: white;
   font-size: 100px;
@@ -205,7 +202,6 @@ input::-moz-focus-inner {
 }
 
 /* Colours for each box */
-
 .box1 {
   background: #1abc9c;
 }
@@ -246,17 +242,83 @@ input::-moz-focus-inner {
   background: #16a085;
 }
 
+
 /* We start writing out flexbox here. The above is just page setup */
 
-.container {
+/* justify-content */
+/* .container {
   display: flex;
-  border: 10px solid goldenrod;
+  justify-content: flex-start;
+  border: 10px solid mistyrose;
+  flex-direction: column;
   min-height: 100vh;
+} 
+
+.box {
+    font-size: 20px;
+}
+*/
+
+/* align-items */
+/* .container {
+  display: flex;
+  border: 10px solid mistyrose;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box1 {
+  font-size: 30px;
+}
+
+.box3 {
+  font-size: 150px;
+}
+
+.box4 {
+  font-size: 200px;
+}
+
+.box5 {
+  font-size: 77px;
+} */
+
+/* align-content */
+/* .container {
+  display: flex;
+  min-height: 100vh;
+  border: 10px solid mistyrose;
   flex-wrap: wrap;
-  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
 .box {
-  width: calc(33.3333333% - 20px);
-  margin: 10px;
+  width: 33.333%;
+} */
+
+/* align-self */
+.container {
+  display: flex;
+  min-height: 100vh;
+  border: 10px solid mistyrose;
+  align-items: flex-start;
+}
+
+.box {
+  width: 33.333%;
+}
+
+.box2 {
+  padding-bottom: 200px;
+}
+
+.box6 {
+  padding-bottom: 0;
+}
+
+.box9 {
+  padding-bottom: 50px;
+  align-self: stretch;
 }
